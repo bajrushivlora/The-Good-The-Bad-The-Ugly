@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	height: 14440px;
+	background: linear-gradient(180deg, #f3ff70 0%, #f3ff70 25%, #6d7231 29%, #323327 36%, #1d1e17 100%);
+}
+
+.good {
+	max-width: 20%;
+  	height: auto;
+	margin-top: 160px;
+	margin-left: 550px;
+	margin-right: 400px;
+}
+
+img.good:hover {
+	animation-name: bounce;
+	animation-duration: .4s;
+	animation-iteration-count: infinite;
+}
+
+.toothpaste {
+	margin-top: 900px;
+	max-width: 100%;
+  	height: auto;
+  	animation-name: shake;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+}
+
+.bad {
+	display: block;
+	max-width: 100%;
+  	height: auto;
+  	padding: 0;
+  	margin: 0;
+}
+
+img.bad:hover {
+	animation-name: shake;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(20px);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(20px);
+	}
+}
+
+@keyframes shake {
+	0% {
+		transform: rotateZ(5deg);
+	}
+
+	25% {
+		transform: rotateZ(-5deg);
+	}
+	
+	50% {
+		transform: rotateZ(5deg);
+	}
+
+	75% {
+		transform: rotateZ(-5deg);
+	}
+
+	100% {
+		transform: rotateZ(5deg);
+	}
+}
+
+
