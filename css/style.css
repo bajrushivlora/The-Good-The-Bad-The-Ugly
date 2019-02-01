@@ -11,8 +11,9 @@ body {
 	max-width: 20%;
   	height: auto;
 	margin-top: 160px;
-	margin-left: 550px;
-	margin-right: 400px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.good:hover {
